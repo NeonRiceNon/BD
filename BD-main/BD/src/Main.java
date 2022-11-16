@@ -9,6 +9,8 @@ public class Main {
         System.out.println("Enter password");
         String pass = scanner.nextLine();*/
 
-        Connect.INSERT();
+        // Connect.INSERT();
+        // Connect.Update();
+        Connect.Delete();
     }
 }
