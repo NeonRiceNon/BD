@@ -88,6 +88,41 @@ public class Connect {
 
     //УДАЛЕНИЕ
     public static void Delete() {
+        /*try {
+            Statement statement = Connect("PKS", "PKS", "jdbc:postgresql://46.229.214.241:5432/book publishing").createStatement();
+            int AUTHOR = statement.executeUpdate("DELETE FROM \"Author\" WHERE \"id_Author\" = '27'");
+            //statement.executeUpdate("UPDATE public.\"Author\" SET name='Бобров' WHERE \"id_Author\" = '1'");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            Statement statement = Connect("PKS", "PKS", "jdbc:postgresql://46.229.214.241:5432/book publishing").createStatement();
+            int CLIENT = statement.executeUpdate("DELETE FROM \"Client\" WHERE \"id_Client\" = '16'");
+            //statement.executeUpdate("UPDATE public.\"Author\" SET name='Бобров' WHERE \"id_Author\" = '1'");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            Statement statement = Connect("PKS", "PKS", "jdbc:postgresql://46.229.214.241:5432/book publishing").createStatement();
+            int GENRE = statement.executeUpdate("DELETE FROM \"Genre\" WHERE \"id_Genre\" = '14'");
+            //statement.executeUpdate("UPDATE public.\"Author\" SET name='Бобров' WHERE \"id_Author\" = '1'");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }*/
+        try {
+            Statement statement = Connect("PKS", "PKS", "jdbc:postgresql://46.229.214.241:5432/book publishing").createStatement();
+            int BOOKS = statement.executeUpdate("DELETE FROM \"Author\" WHERE \"id_Author\" = '27'");
+            //statement.executeUpdate("UPDATE public.\"Author\" SET name='Бобров' WHERE \"id_Author\" = '1'");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        /*try {
+            Statement statement = Connect("PKS", "PKS", "jdbc:postgresql://46.229.214.241:5432/book publishing").createStatement();
+            int ORDERS = statement.executeUpdate("DELETE FROM \"Author\" WHERE \"id_Author\" = '27'");
+            //statement.executeUpdate("UPDATE public.\"Author\" SET name='Бобров' WHERE \"id_Author\" = '1'");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }*/
 
     }
 }
